@@ -31,7 +31,7 @@ x-status: acquired
 x-acquired-by: salesforce
 x-acquired-date: '2016'
 x-redirects-to: https://www.salesforce.com/sales/cpq/
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:

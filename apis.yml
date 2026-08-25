@@ -12,13 +12,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/steelbrick.png
 name: Steelbrick
-description: 'SteelBrick was a Configure-Price-Quote (CPQ) SaaS vendor backed by IVP and Shasta Ventures
-  before it was acquired by Salesforce (announced December 2015, closed 2016) and folded into the product
-  now shipped as Salesforce CPQ (formerly Salesforce Revenue Cloud). The steelbrick.com domain is no longer
-  an independent surface: its apex 301-redirects to salesforce.com/sales/cpq/ and the www host serves a
-  broken default CloudFront certificate. There is no standalone SteelBrick developer portal, documentation,
-  or public API — any live API surface belongs to Salesforce CPQ. This profile is retained as a portfolio
-  lead / acquisition record; enrichment found no independent API artifacts to harvest.'
+description: 'SteelBrick was a Configure-Price-Quote (CPQ) SaaS vendor backed by IVP and Shasta Ventures before
+  it was acquired by Salesforce (announced December 2015, closed 2016) and folded into the product now shipped as
+  Salesforce CPQ (formerly Salesforce Revenue Cloud). The steelbrick.com domain is no longer an independent surface:
+  its apex 301-redirects to salesforce.com/sales/cpq/ and the www host serves a broken default CloudFront certificate.
+  There is no standalone SteelBrick developer portal, documentation, or public API — any live API surface belongs
+  to Salesforce CPQ. This profile is retained as a portfolio lead / acquisition record; enrichment found no independent
+  API artifacts to harvest.'
 url: https://raw.githubusercontent.com/api-evangelist/steelbrick/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -33,7 +33,7 @@ x-acquired-date: '2016'
 x-redirects-to: https://www.salesforce.com/sales/cpq/
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-21'
 tags:
 - Company
 - Enterprise Saas
@@ -58,6 +58,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/salesforce/
+  name: Salesforce
+  x-relationship: acquisition
+  x-generated-by: salesforce-family:2026-08-21
+  x-acquired: 2015
 - type: DomainSecurity
   url: security/steelbrick-domain-security.yml
 - type: Website
@@ -67,3 +73,6 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-parent: salesforce
+x-relationship: acquisition
+x-acquired: 2015
